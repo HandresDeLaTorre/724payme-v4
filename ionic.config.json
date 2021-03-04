@@ -1,7 +1,5 @@
 {
   "name": "724payme-v4",
-  "integrations": {
-    "capacitor": {}
-  },
+  "integrations": {},
   "type": "angular"
 }

@@ -1,0 +1,74 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-buttons slot="start">
+			<ion-back-button text="" icon="chevron-back-outline"></ion-back-button>
+		</ion-buttons>
+		<ion-title>'account' </ion-title>
+	</ion-toolbar>
+	<div class="banner d-flex" (click)="profile()">
+		<div class="img_box center_img">
+			<img src="assets/imgs/profile.png" class="crop_img">
+		</div>
+		<div class="text">
+			<h2>Sam Smith</h2>
+			<h3>'view_profile' </h3>
+		</div>
+	</div>
+</ion-header>
+
+
+<ion-content>
+	<ion-list lines="none">
+		<ion-item (click)="thumb_impression()">
+			<div class="item_inner">
+				<h2>'change_thumb_impression' </h2>
+				<p>'change_login_mpin' </p>
+			</div>
+		</ion-item>
+		<ion-item (click)="nearby_bank()">
+			<div class="item_inner">
+				<h2>'nearby_bank_atm' </h2>
+				<p>'found_nearest' </p>
+			</div>
+		</ion-item>
+
+		<ion-item (click)="change_language()">
+			<div class="item_inner">
+				<h2>'change_language' </h2>
+				<p>'select_language' </p>
+			</div>
+		</ion-item>
+
+		<ion-item (click)="terms_conditions()">
+			<div class="item_inner">
+				<h2>'terms_conditions' </h2>
+				<p>'bank_app_conditions' </p>
+			</div>
+		</ion-item>
+		<ion-item (click)="faqs()">
+			<div class="item_inner">
+				<h2>'faqs' </h2>
+				<p>'faqs_text' </p>
+			</div>
+		</ion-item>
+		<ion-item (click)="support()">
+			<div class="item_inner">
+				<h2>'24_support' </h2>
+				<p>'24_support_text' </p>
+			</div>
+		</ion-item>
+		<ion-item (click)="sing_in()">
+			<div class="item_inner">
+				<h2>'logout' </h2>
+				<p>'logout_from_app' </p>
+			</div>
+		</ion-item>
+	</ion-list>
+
+	<div class="buy_this_app">
+		<h2>
+			<ion-icon class="zmdi zmdi-shopping-cart"></ion-icon>
+			"buy_this_app"
+		</h2>
+	</div>
+</ion-content>

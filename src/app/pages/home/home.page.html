@@ -1,0 +1,165 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-title><span>724 PAYME</span></ion-title>
+	</ion-toolbar>
+	<div class="banner">
+		<div class="scroll_container">
+			<div class="item_scroll" (click)="statement()">
+				<h3>Monedero</h3>
+				<h2>0014 3125157900</h2>
+				<h4>Mi balance</h4>
+				<h5>Resumen del monedero</h5>
+			</div>
+			<div class="item_scroll" (click)="statement()">
+				<h3>prestamos</h3>
+				<h2>0016 3125157900</h2>
+				<h4>Mi balance</h4>
+				<h5>Resumen del monedero</h5>
+			</div>
+<!--
+			<div class="item_scroll" (click)="statement()">
+				<h3>Saving Account</h3>
+				<h2>0014 1241 5574</h2>
+				<h4>check_blance' /traslate</h4>
+				<h5>statement' /traslate</h5>
+			</div>
+			<div class="item_scroll" (click)="statement()">
+				<h3>Credit Account</h3>
+				<h2>0014 1241 5574</h2>
+				<h4>check_blance' /traslate</h4>
+				<h5>statement' /traslate</h5>
+			</div>
+			<div class="item_scroll" (click)="statement()">
+				<h3>Saving Account</h3>
+				<h2>0014 1241 5574</h2>
+				<h4>check_blance' /traslate</h4>
+				<h5>statement' /traslate</h5>
+			</div>
+			<div class="item_scroll" (click)="statement()">
+				<h3>Credit Account</h3>
+				<h2>0014 1241 5574</h2>
+				<h4>check_blance' /traslate</h4>
+				<h5>statement' /traslate</h5>
+			</div>
+			<div class="item_scroll" (click)="statement()">
+				<h3>Saving Account</h3>
+				<h2>0014 1241 5574</h2>
+				<h4>check_blance' /traslate</h4>
+				<h5>statement' /traslate</h5>
+			</div>
+			<div class="item_scroll" (click)="statement()">
+				<h3>Credit Account</h3>
+				<h2>0014 1241 5574</h2>
+				<h4>check_blance' /traslate</h4>
+				<h5>statement' /traslate</h5>
+			</div>
+ -->
+		</div>
+	</div>
+</ion-header>
+
+<ion-content>
+	<div class="home_menu">
+		<ion-row>
+			<ion-col size="4" (click)="account()">
+				<div class="menu_item ion-text-center">
+					<div class="icon_box">
+						<img src="assets/imgs/ic_account.png">
+					</div>
+					<p>account' /traslate</p>
+				</div>
+			</ion-col>
+			<ion-col size="4" (click)="fund_transfer_options()">
+				<div class="menu_item ion-text-center">
+					<div class="icon_box">
+						<img src="assets/imgs/ic_fund_transfer.png">
+					</div>
+					<p>fund_transfer' /traslate</p>
+				</div>
+			</ion-col>
+			<ion-col size="4" (click)="statement()">
+				<div class="menu_item ion-text-center">
+					<div class="icon_box">
+						<img src="assets/imgs/ic_statement.png">
+					</div>
+					<p>statement' /traslate</p>
+				</div>
+			</ion-col>
+			<ion-col size="4" (click)="loan()">
+				<div class="menu_item ion-text-center">
+					<div class="icon_box">
+						<img src="assets/imgs/ic_loan.png">
+					</div>
+					<p>loans' /traslate</p>
+				</div>
+			</ion-col>
+			<ion-col size="4" (click)="list_of_deposites()">
+				<div class="menu_item ion-text-center">
+					<div class="icon_box">
+						<img src="assets/imgs/ic_deposite.png">
+					</div>
+					<p>deposite' /traslate</p>
+				</div>
+			</ion-col>
+			<ion-col size="4" (click)="loan()">
+				<div class="menu_item ion-text-center">
+					<div class="icon_box">
+						<img src="assets/imgs/ic_loan.png">
+					</div>
+					<p>loans' /traslate</p>
+				</div>
+			</ion-col>
+			<ion-col size="4" (click)="account()">
+				<div class="menu_item ion-text-center">
+					<div class="icon_box">
+						<img src="assets/imgs/ic_account.png">
+					</div>
+					<p>account' /traslate</p>
+				</div>
+			</ion-col>
+			<ion-col size="4" (click)="fund_transfer_options()">
+				<div class="menu_item ion-text-center">
+					<div class="icon_box">
+						<img src="assets/imgs/ic_fund_transfer.png">
+					</div>
+					<p>fund_transfer' /traslate</p>
+				</div>
+			</ion-col>
+			<ion-col size="4">
+				<div class="menu_item ion-text-center">
+					<div class="icon_box">
+						<img src="assets/imgs/ic_more.png">
+					</div>
+					<p>more' /traslate</p>
+				</div>
+			</ion-col>
+		</ion-row>
+	</div>
+	<ion-list lines="none">
+		<ion-item (click)="loan_info()">
+			<div class="item_inner d-flex">
+				<div class="img_box center_img">
+					<img src="assets/imgs/img_travel.png" class="crop_img">
+				</div>
+				<div class="text-box">
+					<h3>Travel for</h3>
+					<h2>discover yourself !</h2>
+					<h4 class="d-flex"><span>apply_now' /traslate</span> instant_loan_at' /traslate<br>Just 8.90% interest</h4>
+				</div>
+			</div>
+		</ion-item>
+
+		<ion-item (click)="loan_info()">
+			<div class="item_inner d-flex">
+				<div class="img_box center_img">
+					<img src="assets/imgs/img_study.png" class="crop_img">
+				</div>
+				<div class="text-box">
+					<h3>Get a Lowest interest rate</h3>
+					<h2>Education Loan</h2>
+					<h4 class="d-flex"><span>apply_now' /traslate</span> instant_loan_at' /traslate<br>Just 8.90% interest</h4>
+				</div>
+			</div>
+		</ion-item>
+	</ion-list>
+</ion-content>
