@@ -1,0 +1,140 @@
+ion-header {
+	ion-toolbar ion-title {
+		padding: 0 15px !important;
+		display: block;
+		text-align: center;
+	}
+
+	.banner {
+		background: var(--primary);
+		padding-bottom: 5px;
+
+		ion-card {
+			background: url('../../../assets/imgs/item_bg.png');
+			background-size: cover;
+			background-repeat: no-repeat;
+			position: relative;
+			border-radius: 10px;
+			padding: 13px 18px 13px 18px;
+			margin: 0 auto;
+			width: calc(100% - 25px);
+			margin-bottom: 13px;
+
+			&::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: #000;
+				opacity: .3;
+
+			}
+
+			ion-row {
+				margin: 0 -5px;
+				align-items: flex-end;
+				position: relative;
+				z-index: 99;
+
+				ion-col {
+
+					h3 {
+						font-size: .8rem;
+						font-weight: 500;
+						margin: 0;
+						margin-bottom: 7px;
+						color: var(--text-light);
+					}
+
+					h2 {
+						margin: 0;
+						font-size: 1.3rem;
+						font-weight: 400;
+						letter-spacing: 0.5px;
+						color: var(--white);
+
+						sub {
+							font-weight: 400;
+							font-size: .7rem;
+						}
+					}
+
+					h4 {
+						color: var(--text-light);
+						font-size: 1.2rem;
+						font-weight: 500;
+					}
+				}
+			}
+		}
+	}
+}
+
+ion-list {
+	width: calc(100% - 37px);
+	margin: 0 auto;
+	margin-top: 20px;
+	padding: 0;
+	background: none;
+
+	h2 {
+		margin: 0;
+		color: var(--text-light);
+		font-size: .85rem;
+		font-weight: 500;
+		margin-bottom: 22px;
+	}
+
+	ion-item {
+		padding: 0;
+		border-bottom: 1px solid #ccc !important;
+		padding-bottom: 10px;
+		margin-bottom: 13px;
+		--background: var(--transparent);
+		background: var(--transparent);
+		--inner-padding-end: 0px;
+		--inner-min-height: unset !important;
+		--padding-start: 0;
+		--min-height: unset;
+
+
+		.item_inner {
+			width: 100%;
+
+			h3 {
+				font-size: 1rem;
+				font-weight: 500;
+				margin: 0;
+				padding-bottom: 6px;
+			}
+
+			h4 {
+				color: var(--text-light);
+				font-size: .8rem;
+				font-weight: 400;
+				margin: 0;
+
+				span {
+					&.end {
+						font-size: .95rem;
+						font-weight: 700;
+					}
+				}
+			}
+		}
+
+		&.debited {
+			.item_inner h4 span.end {
+				color: var(--red_color);
+			}
+		}
+
+		&.credited {
+			.item_inner h4 span.end {
+				color: var(--secondary);
+			}
+		}
+	}
+}
