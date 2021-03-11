@@ -4,9 +4,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { SingInPageRoutingModule } from './sing-in-routing.module';
+import { SingUpPageRoutingModule } from './sing-up-routing.module';
 
-import { SingInPage } from './sing-in.page';
+import { SingUpPage } from './sing-up.page';
 
 @NgModule({
   imports: [
@@ -14,8 +14,8 @@ import { SingInPage } from './sing-in.page';
     FormsModule,
     IonicModule,
     ReactiveFormsModule,
-    SingInPageRoutingModule
+    SingUpPageRoutingModule
   ],
-  declarations: [SingInPage]
+  declarations: [SingUpPage]
 })
-export class SingInPageModule {}
+export class SingUpPageModule {}

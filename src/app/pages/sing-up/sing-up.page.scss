@@ -1,0 +1,48 @@
+.banner {
+	background: var(--primary);
+	height: 160px;
+	display: flex;
+	align-items: flex-start;
+
+	h2 {
+		margin: 0;
+		color: var(--white);
+		align-self: center;
+		width: 100%;
+		font-size: 1.6rem;
+		font-weight: 500;
+
+		span {
+			font-weight: 400;
+		}
+	}
+}
+
+.form {
+	margin-top: 30px;
+
+	ion-list {
+		padding-bottom: 8px;
+	}
+
+	h2 {
+		margin: 0;
+		color: var(--text-light);
+		font-size: .95rem;
+		margin-bottom: 30px;
+	}
+
+}
+
+.thumb_impression {
+	padding-top: 30px;
+	width: calc(100% - 64px);
+	margin: 0 auto;
+
+	h2 {
+		color: var(--text-dark);
+		margin: 0;
+		font-size: .95rem;
+		margin-bottom: 30px;
+	}
+}

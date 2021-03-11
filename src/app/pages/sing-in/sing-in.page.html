@@ -2,7 +2,7 @@
 	<ion-toolbar>
 		<ion-title>
 			<span class="d-flex" (click)="sign_up()">
-				<!-- <span class="end"> {{'new_user'  }</span> -->
+				 <span class="end"> {{'Crear usuario'}}</span>
 			</span>
 		</ion-title>
 	</ion-toolbar>
@@ -10,24 +10,26 @@
 
 <ion-content>
 	<div class="banner">
-		<!-- <h2 class="ion-text-center">{{'app_title'  } <span>{{'app_title_2'  }</span></h2> -->
+		 <h2 class="ion-text-center"> {{app_title }} </h2>
 	</div>
 
 	<div class="form">
-		<!-- <h2 class="ion-text-center">{{'or_sign_in_with_customer_id'  }</h2> -->
+		<h2 class="ion-text-center">{{'O inicia sesión con tu usuario y contraseña' }}</h2>
+    <form [formGroup]="loginUsuario" (ngSubmit)="tabs($event)">
 		<ion-list lines="none">
 			<ion-item lines="none">
-				<ion-input type="email" placeholder="email_customer_id"  ></ion-input>
+				<ion-input type="email" placeholder="Correo" formControlName="email" ></ion-input>
 			</ion-item>
 			<ion-item lines="none">
-				<ion-input type="text" placeholder="enter_mpin  "></ion-input>
+				<ion-input type="password" placeholder="Contraseña" formControlName="password"></ion-input>
 			</ion-item>
 		</ion-list>
-		<ion-button size="large" shape="block" class="btn" (click)="tabs()">'sign_in' </ion-button>
+		<ion-button size="large" shape="block" class="btn" type="submit">Iniciar sesión</ion-button>
+  </form>
 	</div>
 
 	<div class="thumb_impression ion-text-center">
-		<h2>{{'or_scan_you_thump_to_continue'  }</h2>
+		<h2>{{'Ingresa con la huella'}}</h2>
 		<div class="fingerprint">
 			<img src="assets/imgs/ic_thumb.png">
 		</div>

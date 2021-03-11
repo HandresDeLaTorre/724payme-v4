@@ -1,0 +1,38 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-buttons slot="start">
+			<ion-back-button text="" icon="chevron-back-outline"></ion-back-button>
+		</ion-buttons>
+		<ion-title></ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content>
+	<div class="banner">
+		<h2 class="ion-text-center">{{'724 PAYME' }} </h2>
+	</div>
+
+	<div class="form">
+
+		<h2 class="ion-text-center">{{'Puedes crear algo fenomenal'}}</h2>
+
+    <form [formGroup]="registroUsuario" (ngSubmit)="register($event)">
+		<ion-list lines="none">
+			<ion-item lines="none">
+				<ion-input type="email" formControlName="email" placeholder="Correo electrónico"></ion-input>
+			</ion-item>
+			<ion-item lines="none">
+				<ion-input type="number" placeholder="Numero de teléfono"></ion-input>
+			</ion-item>
+			<ion-item lines="none">
+				<ion-input type="password" formControlName="password" placeholder="{{'**************' }}"></ion-input>
+			</ion-item>
+		</ion-list>
+		<ion-button size="large" shape="block" class="btn" type="submit">{{'Crear Usuario' }}</ion-button>
+	</form>
+  </div>
+
+	<div class="thumb_impression ion-text-center">
+		<h2>{{'sign_up_text' }}<br>{{'phone_number' }}</h2>
+	</div>
+</ion-content>
