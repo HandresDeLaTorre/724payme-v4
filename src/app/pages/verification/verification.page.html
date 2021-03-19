@@ -1,0 +1,51 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-buttons slot="start">
+			<ion-back-button text="" icon="chevron-back-outline"></ion-back-button>
+		</ion-buttons>
+		<ion-title>{{'verification'  }}</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content>
+	<div class="form">
+		<h2 class="ion-text-center">{{'enter_otp_send_on'  }}<br>+1 987 654 3210</h2>
+		<ion-list lines="none">
+			<ion-item lines="none">
+				<ion-input type="text" placeholder="{{'enter_otp_code'  }}"></ion-input>
+			</ion-item>
+		</ion-list>
+		<ion-button size="large" shape="block" class="btn" (click)="tabs()">{{'continue'  }}</ion-button>
+	</div>
+	<div class="thumb_impression ion-text-center">
+		<h2>{{'verification_text'  }}<br>{{'verification_text_2'  }}</h2>
+	</div>
+
+  <div class="displayTable">
+    <div class="displayTableCell">
+
+      <div class="authBlock">
+        <h3>Thank You for Registering</h3>
+
+        <div class="formGroup" *ngIf="authService.userData as user">
+          <p class="text-center">We have sent a confirmation email to <strong>{{user.email}}</strong>.</p>
+          <p class="text-center">Please check your email and click on the link to verfiy your email address.</p>
+        </div>
+
+        <!-- Calling SendVerificationMail() method using authService Api -->
+        <div class="formGroup">
+          <button type="button" class="btn btnPrimary" > <!-- (click)="authService.SendVerificationMail()" -->
+            <i class="fas fa-redo-alt"></i>
+            Enviar de nuevo el correo
+          </button>
+        </div>
+
+      </div>
+
+      <div class="redirectToLogin">
+        <span>Go back to?<span class="redirect" routerLink="/sign-in"> Sign in</span></span>
+      </div>
+
+    </div>
+  </div>
+</ion-content>

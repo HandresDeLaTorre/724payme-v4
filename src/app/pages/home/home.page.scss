@@ -4,6 +4,8 @@ ion-header {
 		text-align: center;
 	}
 
+
+
 	.banner {
 		position: relative;
 		width: 100%;
@@ -29,6 +31,8 @@ ion-header {
 				background: url('../../../assets/imgs/banner_bg.png');
 				background-size: cover;
 				background-repeat: no-repeat;
+        box-shadow:  2px 2px 5px #001c40,
+                    -2px -2px 5px #003c8c;
 				color: var(--white);
 				border-radius: 10px;
 				margin: 0 4px;
@@ -112,8 +116,13 @@ ion-header {
 	}
 }
 
+ion-content {
+  background: #ededed;
+}
+
 .home_menu {
 	padding: 13px 0 20px 0;
+
 
 	ion-row {
 		ion-col {
@@ -123,7 +132,11 @@ ion-header {
 				position: relative;
 				display: block;
 				overflow: hidden;
-				padding: 13px 0 13px 0;
+				padding: 10px 0 10px 0;
+        border-radius: 5px;
+        background: #fafeff;
+        box-shadow:  5px 5px 10px #9ea0a1,
+                    -5px -5px 10px #ffffff;
 
 				.icon_box {
 					display: block;

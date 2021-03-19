@@ -16,23 +16,23 @@
 
 		<h2 class="ion-text-center">{{'Puedes crear algo fenomenal'}}</h2>
 
-    <form [formGroup]="registroUsuario" (ngSubmit)="register($event)">
+    <form [formGroup]="registroUpdate" (ngSubmit)="updateUser($event)">
 		<ion-list lines="none">
-			<ion-item lines="none">
+<!-- 			<ion-item lines="none">
 				<ion-input type="email" formControlName="email" placeholder="Correo electrónico"></ion-input>
-			</ion-item>
+			</ion-item> -->
 			<ion-item lines="none">
 				<ion-input type="text" formControlName="displayName" placeholder="displayName"></ion-input>
 			</ion-item>
-			<ion-item lines="none">
-				<ion-input type="password" formControlName="password" placeholder="{{'**************' }}"></ion-input>
+      <ion-item lines="none">
+				<ion-input type="number" formControlName="tel" placeholder="Telefono"></ion-input>
 			</ion-item>
+<!-- 			<ion-item lines="none">
+				<ion-input type="password" formControlName="password" placeholder="{{'**************' }}"></ion-input>
+			</ion-item> -->
 		</ion-list>
 		<ion-button size="large" shape="block" class="btn" type="submit">{{'Crear Usuario' }}</ion-button>
 	</form>
   </div>
 
-	<div class="thumb_impression ion-text-center">
-		<h2>{{'sign_up_text' }}<br>{{'phone_number' }}</h2>
-	</div>
 </ion-content>

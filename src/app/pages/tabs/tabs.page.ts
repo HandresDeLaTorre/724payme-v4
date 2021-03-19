@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-tabs',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TabsPage implements OnInit {
 
-  constructor() { }
+  constructor(
+    private authService: AuthService
+  ) {
+/*     setTimeout(()=>{
+      this.authService.logout()
+    },30000000) */
+   }
 
   ngOnInit() {
+
   }
 
 }

@@ -1,10 +1,19 @@
 <ion-header>
 	<ion-toolbar>
+
 		<ion-title>
-			<span class="d-flex" (click)="sign_up()">
-				 <span class="end"> {{'Crear usuario'}}</span>
+			<span class="d-flex" (click)="sign_up()" >
+
+				 <span class="end"> {{'Crear Cuenta'}}</span>
+
+
 			</span>
 		</ion-title>
+    <ion-buttons  slot="end">
+      <ion-button color="light" (click)="sign_up()">
+        <ion-icon name="card-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
 	</ion-toolbar>
 </ion-header>
 

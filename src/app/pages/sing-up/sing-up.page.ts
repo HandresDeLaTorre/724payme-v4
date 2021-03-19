@@ -25,6 +25,7 @@ export class SingUpPage implements OnInit {
     this.registroUsuario = this.formBuilder.group({
       email:    ['', [Validators.required, Validators.pattern(this.isEmail)]],
       password: ['', [Validators.required]],
+      displayName: ("")
     })
   }
 
@@ -36,12 +37,9 @@ export class SingUpPage implements OnInit {
     event.preventDefault();
     if (this.registroUsuario.valid) {
       const valor = this.registroUsuario.value;
-      console.log( `Funciona el Boton Registro ${valor.email}`);
       this.authService.createUser(valor.email, valor.password)
-      .then(() =>{
-        this.authService.logout();
-        this.route.navigate(['/tabs'])
-      })
+      .then(() => this.authService.logout())
+      .then(()=> this.route.navigate(['verification']))
     };
   }
 

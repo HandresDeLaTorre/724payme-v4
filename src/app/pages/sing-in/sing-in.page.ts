@@ -14,6 +14,9 @@ export class SingInPage implements OnInit {
   app_title:string = '724 PAYME'
 
   loginUsuario:FormGroup;
+
+  userData:any;
+
   private isEmail = /\S+@\S+\.\S+/;
 
   constructor(
@@ -33,16 +36,24 @@ export class SingInPage implements OnInit {
   }
 
   ngOnInit() {
+
   }
 
   tabs(event: Event) {
     event.preventDefault();
+    //console.error('Funciona el boton')
+    //this.route.navigate(['./tabs']);
     if (this.loginUsuario.valid){
       const valor = this.loginUsuario.value
-      console.log(`el usuario es ${valor.email}`);
+     // console.log(`el usuario es ${valor.email}`);
       this.authService.SignIn(valor.email, valor.password)
+      //.then(()=>this.route.navigate(['tabs']))
+    }else {
+      window.alert('Los datos no son validos')
     }
   }
+
+
 
   sign_up() {
     this.route.navigate(['./sing-up']);

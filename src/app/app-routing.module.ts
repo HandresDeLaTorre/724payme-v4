@@ -15,7 +15,7 @@ const routes: Routes = [
   },
   {
     path: 'tabs',
-    loadChildren: () => import('./pages/tabs/tabs.module').then( m => m.TabsPageModule),canActivate: [AuthGuard]
+    loadChildren: () => import('./pages/tabs/tabs.module').then( m => m.TabsPageModule), canActivate: [AuthGuard]
   },
   {
     path: 'home',
@@ -32,6 +32,14 @@ const routes: Routes = [
   {
     path: 'sing-up',
     loadChildren: () => import('./pages/sing-up/sing-up.module').then( m => m.SingUpPageModule)
+  },
+  {
+    path: 'verification',
+    loadChildren: () => import('./pages/verification/verification.module').then( m => m.VerificationPageModule)
+  },
+  {
+    path: 'completar-perfil',
+    loadChildren: () => import('./pages/completar-perfil/completar-perfil.module').then( m => m.CompletarPerfilPageModule)
   },
 ];
 
